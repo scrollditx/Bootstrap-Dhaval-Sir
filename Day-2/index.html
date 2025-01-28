@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container-fluid bg-primary text-white text-center py-3">
+      <h1>Container-Fluid</h1>
+      <p>This container takes the entire width of the viewport</p>
+    </div>
+
+    <div class="container bg-warning text-center text-dark py-3 mt-3">
+      <h2>Fixed Container</h2>
+      <p>
+        This container has a fixed width and is centered within the viewport.
+      </p>
+
+      <div class="row">
+        <div class="col-sm-12 col-md-6 bg-success py-3 text-white">
+          <h3>Column 1</h3>
+          <p>This is the first column.</p>
+          <div class="row">
+            <div class="col-sm-6 bg-danger py-2">
+              <p>Nested Column 1</p>
+            </div>
+            <div class="col-sm-6 bg-dark py-2">
+              <p>Nested Column 1</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 bg-info py-3 text-white">
+          <h3>Column 1</h3>
+          <p>This is the first column.</p>
+          <div class="row">
+            <div class="col-sm-6 bg-light py-2 text-dark">
+              <p>Nested Column 1</p>
+            </div>
+            <div class="col-sm-6 bg-secondary py-2 text-white">
+              <p>Nested Column 1</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-dark text-white text-center py-3 mt-3">
+        <h2>Another Fluid-Container</h2>
+        <p>This container takes the entire width of the viewport</p>
+    </div>
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
+<!--! About the code:-  -->
+
+<!--? In this code , we have used the container and container-fluid classes to create a fixed-width container and a full-width container, respectively. We have also used the row and col classes to create a grid layout with multiple columns. The nested columns are created using the same row and col classes. The bg-* classes are used to add background colors to the elements. -->
+
+<!--! About the bootstrap's container classes:-  -->
+
+<!--? Bootstrap provides two types of containers: container and container-fluid. The container class creates a fixed-width container that is centered within the viewport, while the container-fluid class creates a full-width container that takes the entire width of the viewport. -->
+
+<!--! Container Types (SM-XXL) with its width:-  -->
+
+<!--? - container: fixed-width container for all screen sizes -->
+<!--* - container-sm: fixed-width container for small screens (>=576px) -->
+<!--? - container-md: fixed-width container for medium screens (>=768px) -->
+<!--* - container-lg: fixed-width container for large screens (>=992px) -->
+<!--? - container-xl: fixed-width container for extra-large screens (>=1200px) -->
+<!--* - container-xxl: fixed-width container for extra-extra-large screens (>=1400px) -->
+<!--? - container-fluid: full-width container for all screen sizes -->
+
+<!--! About Bootstrap's Grid System:- -->
+
+<!--? Bootstrap's grid system is a 12-column grid that allows you to create responsive layouts. The grid system is based on flexbox and provides classes for creating rows and columns. You can use the row class to create a row and the col class to create columns within the row. The grid system is responsive and adjusts the layout based on the screen size. -->
