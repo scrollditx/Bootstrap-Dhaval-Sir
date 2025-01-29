@@ -1,0 +1,112 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Powerful Quotes:-</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <style>
+        .card{
+            transition: transform 0.3s ease-in-out;
+            animation: fadeIn 1s ease-in;
+        }
+
+        .card:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .card img{
+            transition: transform 0.3s ease;
+        }
+
+        .card img:hover{
+            transform: scale(1.2);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .blockquote p{
+            transition: color 0.3s ease;
+        }
+
+        .card:hover .blockquote p{
+            color: #f8f9fa;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-dark text-white">
+    <div class="container mt-5">
+        <h1 class="display-4 text-center mb-5">Inspirational Quotes</h1>
+        <div class="row">
+            <!-- First Quote -->
+            <div class="col-md-4">
+                <div class="card h-100 bg-danger text-white">
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                            <p>“Wake up to reality! Nothing ever goes as planned in this world. The longer you live, the more you realize that in this reality only pain, suffering and futility exist”</p>
+                            <figure class="text-end">
+                                <img src="./images/Madara.jpg" alt="Uchiha Madara" class="rounded-circle" style="width: 60px;">
+                                <figcaption class="blockquote-footer mt-2 text-white">
+                                    Uchiha Madara
+                                </figcaption>
+                            </figure>
+                        </blockquote>
+                    </div> 
+                </div>
+            </div>
+            <!-- Second Quote -->
+            <div class="col-md-4">
+                <div class="card h-100 bg-warning text-dark">
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                            <p>“The pain of being alone is completely out of this world, isn’t it? I don’t know why, but I understand your feelings so much, it actually hurts.”</p>
+                            <figure class="text-end">
+                                <img src="./images/Naruto-2.jpg" alt="Uchiha Madara" class="rounded-circle" style="width: 60px;">
+                                <figcaption class="blockquote-footer mt-2 text-dark">
+                                    Naruto Uzumaki
+                                </figcaption>
+                            </figure>
+                        </blockquote>
+                    </div> 
+                </div>
+            </div>
+            <!-- Third Quote -->
+            <div class="col-md-4">
+                <div class="card h-100 bg-success text-white">
+                    <div class="card-body ">
+                        <blockquote class="blockquote mb-0">
+                            <p>So I was not born with a whole lot of natural talent, not gifted like Neji but I work hard and I never give up! That is my gift, that is my ninja way!"</p>
+                            <figure class="text-end">
+                                <img src="./images/Rock lee.jpg" alt="Uchiha Madara" class="rounded-circle" style="width: 60px;">
+                                <figcaption class="blockquote-footer mt-2 text-white">
+                                    Rock Lee
+                                </figcaption>
+                            </figure>
+                        </blockquote>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+                                        <!--! About the Blockquote element: -->
+
+<!--? The <blockquote> element specifies a section that is quoted from another source. -->
+
+                                        <!--! About the Figure & Figcaption element: -->
+
+<!--? The <figure> element specifies self-contained content, like illustrations, diagrams, photos, code listings, etc. The <figcaption> element defines a caption for a <figure> element. -->

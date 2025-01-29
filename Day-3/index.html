@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Kakashi</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <style>
+      .card {
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      }
+
+      .card-img-top {
+        transition: transform 0.3s ease;
+      }
+
+      .card-img-top:hover {
+        transform: scale(1.1);
+      }
+
+      .animate-it {
+        animation: fadeIn 1s ease-in;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-dark text-white">
+    <div class="container mt-3">
+      <h1 class="display-4 text-center mb-5">Team Kakashi</h1>
+      <!-- Kakashi Hatake -->
+      <div class="row mb-5">
+        <div class="col-12 col-sm-10 col-md-8 col-lg-6 mx-auto">
+          <div class="card text-center bg-primary text-white">
+            <img
+              style="width: 35%"
+              src="./images/Kakashi.jpg"
+              alt="Kakashi"
+              class="card-img-top img-fluid rounded-circle mx-auto mt-3"
+            />
+            <div class="card-body">
+              <h2 class="card-title display-5">Kakashi Hatake</h2>
+              <p class="card-text lead">Team Leader | Jonin</p>
+              <p class="card-text">Copy Ninja of the Hidden Leaf Village</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Team Members -->
+      <div class="row g-4">
+        <!-- Sasuke Uchiha -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card text-center bg-info text-white">
+            <img
+              src="./images/Sasuke.jpg"
+              alt="Sasuke"
+              class="card-img-top img-fluid rounded-circle w-50 mx-auto mt-3"
+            />
+            <div class="card-body">
+              <h3 class="card-title h2">Sasuke Uchiha</h3>
+              <p class="card-text h5">Genin</p>
+              <p class="card-text">Last survivor of the Uchiha clan</p>
+            </div>
+          </div>
+        </div>
+        <!-- Naruto Uzumaki -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card text-center bg-warning text-dark">
+            <img
+              src="./images/Naruto.jpg"
+              alt="Naruto"
+              class="card-img-top img-fluid rounded-circle w-50 mx-auto mt-3"
+            />
+            <div class="card-body">
+              <h3 class="card-title h2">Naruto Uzumaki</h3>
+              <p class="card-text h5">Genin</p>
+              <p class="card-text">Future Hokage, Believe it!!</p>
+            </div>
+          </div>
+        </div>
+        <!-- Sakura Haruno -->
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card text-center bg-secondary text-white">
+            <img
+              src="./images/Sakura.jpg"
+              alt="Sasuke"
+              class="card-img-top img-fluid rounded-circle w-50 mx-auto mt-3"
+            />
+            <div class="card-body">
+              <h3 class="card-title h2">Sakura Haruno</h3>
+              <p class="card-text h5">Genin</p>
+              <p class="card-text">Trash</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
+                                      <!--! About Used Bootstrap Classes:-    -->
+
+<!--? 1. .card - Creates a card component with a border and shadow.   -->
+<!--* 2. .rounded-circle - Rounds the corners of an image to create a circular shape.  -->
+<!--? 3. .w-* - Sets the width of an element.  -->
+<!--* 4. .mx-auto - Centers an element horizontally.  -->
+<!--? 5. .mt-* - Adds margin to the top of an element.  -->
+<!--* 6. .display-4 - In Bootstrap, display-4 is a typography utility class that creates a larger, more prominent heading  -->
+<!--? 7. .lead - Sets the font size of text to make it stand out. -->
+<!--* 8. .h2 - Sets the font size of text to make it stand out. -->
+<!--? 9. .h5 - Sets the font size of text to make it stand out. -->
+<!--* 10. .card-title - Sets the font size and weight of the card title. -->
+<!--? 11. .card-text - Sets the font size of the card text. -->
+<!--* 12. .card-img-top - Sets the image to be displayed at the top of the card. -->
+<!--? 13. .img-fluid - Makes an image responsive. -->
+<!--* 14. .img-thumbnail - Makes an image a thumbnail. -->
+
+                                      <!--! About All Typography Classes:- -->
+
+<!--* 1. .h1-.h6 - Sets the font size of text to make it stand out. -->
+<!--? 2. .small - Sets the font size of text to make it stand out. -->
+<!--* 3. .text-* - Sets the color of text. -->
+<!--? 4. .font-weight-bold - Sets the font weight of text to make it stand out. -->
+<!--* 5. .font-italic - Sets the font style of text to italic. -->
+<!--? 6. .text-justify - Justifies the text in an element. -->
+<!--* 7. .text-nowrap - Prevents text from wrapping to the next line. -->
+<!--? 8. .text-left - Aligns text to the left. -->
+<!--* 9. .text-center - Centers text. -->
+<!--? 10. .text-right - Aligns text to the right. -->
+<!--* 11. .text-nowrap - Prevents text from wrapping to the next line. -->
+<!--? 12. .text-break - Breaks text to prevent overflow. -->
+<!--* 13. .text-lowercase - Converts text to lowercase. -->
+<!--? 14. .text-uppercase - Converts text to uppercase. -->
+<!--* 15. .text-capitalize - Capitalizes the first letter of each word. -->
+<!--? 16. .text-monospace - Sets the font family of text to monospace. -->
+<!--* 17. .text-reset - Resets the color of text to the default. -->
+<!--? 18. .text-decoration-none - Removes text decoration (e.g., underline) from text. -->
