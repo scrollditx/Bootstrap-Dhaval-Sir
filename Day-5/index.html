@@ -1,24 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<div class="mb-3">
-    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="mb-3">
-        <label for="emial" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="emial" placeholder="name@example.com">
-      </div>
-      <div class="mb-3">
-        <label for="password" class="form-label">Password</label>
-        <input type="password" class="form-control" id="password">
-      </div>
-      <div class="mb-3">
-        <label for="textarea class="form-label">Example textarea</label>
-        <textarea class="form-control" id="textarea " rows="3"></textarea>
-      </div>
-      <script src="./JS/bootstrap.bundle.min.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chunin Exam Application</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <style>
+      .form-control {
+        transition: all 0.3s ease;
+      }
+
+      .form-control:focus {
+        transform: scale(1.02);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .btn{
+        transition: all 0.3s ease;
+      }
+
+      .btn:hover{
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body class="bg-dark text-white">
+    <div class="container mt-5">
+      <h1 class="text-center mb-3">Chunin Exam Application</h1>
+      <form class="bg-secondary rounded p-4">
+        <!-- Personal Details -->
+        <fieldset class="mb-4 bg-primary p-3 rounded">
+          <legend>Personal Details</legend>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="firstName" class="form-label">First Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="firstName"
+                placeholder="Naruto"
+                required
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="lastName" class="form-label">Last Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="lastName"
+                placeholder="Uzumaki"
+                required
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="age" class="form-label">Age:</label>
+              <input
+                type="number"
+                class="form-control"
+                id="age"
+                placeholder="13"
+                min="12"
+                max="30"
+                required
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="dob" class="form-label">Date of Birth:</label>
+              <input type="date" class="form-control" id="dob" required />
+            </div>
+          </div>
+        </fieldset>
+        <!-- Ninja Details -->
+        <fieldset class="mb-4 bg-danger p-3 rounded">
+          <legend>Ninja Details</legend>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="village" class="form-label">Village Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="village"
+                placeholder="Hidden Leaf Village"
+                required
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="regNumber" class="form-label"
+                >Registration Number:</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="regNumber"
+                placeholder="012607"
+                required
+              />
+            </div>
+            <div class="col-12">
+              <label for="sensei" class="form-label">Jonin Sensei:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="sensei"
+                placeholder="Kakashi Hatake"
+                required
+              />
+            </div>
+          </div>
+        </fieldset>
+        <!-- Skills -->
+        <fieldset class="mb-4 bg-success p-3 rounded">
+          <legend>Ninja Skills</legend>
+          <div class="row">
+            <div class="col-12">
+              <label for="mainJutsu" class="form-label">Main Jutsu:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="mainJutsu"
+                placeholder="Shadow Clone Jutsu"
+                required
+              />
+            </div>
+            <div class="col-12">
+              <label for="specialSkills" class="form-label"
+                >Special Skills:</label
+              >
+              <textarea
+                class="form-control"
+                id="specialSkills"
+                rows="3"
+                placeholder="List your special abilities..."
+                required
+              ></textarea>
+            </div>
+          </div>
+        </fieldset>
+        <!-- Emergency Contact -->
+        <fieldset class="mb-4 bg-warning p-3 rounded">
+          <legend>Emergency Contact</legend>
+          <div class="row g-3">
+            <div class="col-md-6" g->
+              <label for="contactName" class="form-label">Contact Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="contactName"
+                placeholder="Iruka Umino"
+                required
+              />
+            </div>
+            <div class="col-md-6" g->
+              <label for="relationship" class="form-label">Contact Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="relationship"
+                placeholder="Former Sensei"
+                required
+              />
+            </div>
+          </div>
+        </fieldset>
+        <button type="submit" class="btn btn-info w-100 text-white">
+          Submit Application
+        </button>
+      </form>
+    </div>
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
+
+                                    <!--! About classes used to build From:-  -->
+
+<!--! 1. rounded: This class is used to add rounded corners to the fieldsets. -->
+<!--? 2. form-label: This CSS selector is used to style the labels in the form. -->
+<!--! 3. form-control: This class is used to style the input fields. -->
+<!--? 4. btn: This class is used to style the submit button. -->
+<!--! 5. w-100: This class is used to make the button full-width. -->
