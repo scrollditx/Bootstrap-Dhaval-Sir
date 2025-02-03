@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Selection Form</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #1a1a1a;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+    
+        .ninja-form {
+            background-color: #2d2d2d;
+            border: 2px solid #ff4500;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+    
+        .form-select, .form-control {
+            background-color: #333;
+            color: #fff;
+            border: 1px solid #ff4500;
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 4px;
+        }
+    
+        legend {
+            color: #ff4500;
+            font-size: 1.2rem;
+            border-bottom: 1px solid #ff4500;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+    
+        .form-check-label {
+            color: #fff;
+        }
+    
+        .btn-submit {
+            background-color: #ff4500;
+            border: none;
+            padding: 12px;
+            font-weight: 500;
+            width: 100%;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+    
+        .btn-submit:hover {
+            background-color: #cc3700;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <h1 class="text-center text-white mb-5">Ninja Registration</h1>
+        
+        <div class="ninja-form p-4">
+            <form>
+                <fieldset class="mb-4">
+                    <legend>Ninja Rank</legend>
+                    <select class="form-select">
+                        <option selected>Select your rank...</option>
+                        <option>Genin</option>
+                        <option>Chunin</option>
+                        <option>Jonin</option>
+                        <option>ANBU</option>
+                    </select>
+                </fieldset>
+
+                <fieldset class="mb-4">
+                    <legend>Village</legend>
+                    <input class="form-control" list="villages" placeholder="Choose your village...">
+                    <datalist id="villages">
+                        <option value="Hidden Leaf Village">
+                        <option value="Hidden Sand Village">
+                        <option value="Hidden Mist Village">
+                        <option value="Hidden Cloud Village">
+                    </datalist>
+                </fieldset>
+
+                <fieldset class="mb-4">
+                    <legend>Equipment</legend>
+                    <div class="form-check form-switch mb-2">
+                        <input class="form-check-input" type="checkbox" id="kunai">
+                        <label class="form-check-label" for="kunai">Kunai Set</label>
+                    </div>
+                    <div class="form-check form-switch mb-2">
+                        <input class="form-check-input" type="checkbox" id="shuriken">
+                        <label class="form-check-label" for="shuriken">Shuriken Pack</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="scrolls">
+                        <label class="form-check-label" for="scrolls">Ninja Scrolls</label>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="btn btn-submit w-100 text-white">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+</body>
+</html>
