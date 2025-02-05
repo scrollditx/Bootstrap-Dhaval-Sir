@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+  </head>
+  <body>
+    <!-- Ranges -->
+    <div class="container">
+      <h1 class="text-center">Ranges</h1>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <!-- Normal Range -->
+          <label for="range1" class="form-label">Normal Range</label>
+          <input type="range" class="form-range" id="range1" />
+          <!-- Disabled Range -->
+          <label for="rangeDisabled" class="form-label">Disabled range</label>
+          <input type="range" class="form-range" id="rangeDisabled" disabled />
+          <!-- Range with min and max values -->
+          <label for="range2" class="form-label"
+            >Range with max and min values</label
+          >
+          <input type="range" class="form-range" min="0" max="10" id="range2" />
+          <!-- Range with step values -->
+          <label for="range3" class="form-label">Range with step values</label>
+          <input
+            type="range"
+            class="form-range"
+            min="0"
+            max="10"
+            step="2"
+            id="range3"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Input-group -->
+    <div class="container">
+        <h1 class="text-center">Input group</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="first">@</span>
+                    <input type="text" class="form-control" placeholder="Username">
+                  </div>
+                  
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Recipient's username">
+                    <span class="input-group-text" id="second">@example.com</span>
+                  </div>
+                  
+                  <div class="input-group mb-3">
+                    <span class="input-group-text">$</span>
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    <span class="input-group-text">.00</span>
+                  </div>
+                  
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Username">
+                    <span class="input-group-text">@</span>
+                    <input type="password" class="form-control" placeholder="Password">
+                  </div>
+                  
+                  <div class="input-group mb-3">
+                    <span class="input-group-text">Comments</span>
+                    <textarea class="form-control"></textarea>
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <span class="input-group-text">First and last name</span>
+                    <input type="text" class="form-control">
+                    <input type="text" class="form-control">
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-text">
+                      <input class="form-check-input" type="checkbox">
+                    </div>
+                    <input type="text" class="form-control">
+                  </div>
+                  
+                  <div class="input-group mb-3">
+                    <div class="input-group-text">
+                      <input class="form-check-input mt-0" type="radio">
+                    </div>
+                    <input type="text" class="form-control">
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <span class="input-group-text">$</span>
+                    <span class="input-group-text">.0</span>
+                    <input type="text" class="form-control">
+                  </div>
+                  
+                  <div class="input-group">
+                    <input type="text" class="form-control">
+                    <span class="input-group-text">$</span>
+                    <span class="input-group-text">.0</span>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <!-- Floating-labels -->
+     <div class="container">
+        <h1 class="text-center my-3">Floating-labels</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="inputFloat" placeholder="name@example.com">
+                    <label for="inputFloat">Email address</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="passwordFloat" placeholder="Password">
+                    <label for="passwordFloat">Password</label>
+                  </div>
+
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control is-invalid" id="inputInvalid" placeholder="name@example.com" value="xyz@gmail.com">
+                    <label for="inputInvalid">Invalid input</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control is-valid" id="inputInvalid" placeholder="name@example.com" value="xyz@gmail.com">
+                    <label for="inputInvalid">Invalid input</label>
+                  </div>
+
+                  <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="textareaFloat"></textarea>
+                    <label for="textareaFloat">Comments</label>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
