@@ -1,23 +1,108 @@
 <!--! Today's Topics -->
 
 <!--? Flex Parent and Child Properties:- Flex behaviors,Directions,Justify-content-(start,center,end,between,around,evenly),Align-items-(start, end, center, baseline, or stretch),Align-self-(start, end, center, baseline, or stretch),Flex-fill,Flex-Grow & Shrink,Wrap,Order,Align-content-(start, end, center, between, around, or stretch. ) -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
-</head>
-<body class="bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="d-flex p-2 text-bg-dark mt-2">I'm a flexbox container!</div>
-                <div class="d-inline-flex p-2 text-bg-dark mt-2">I'm an inline flexbox container!</div>
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+  </head>
+  <body class="bg-light">
+    <div class="container my-5">
+      <h1 class="text-center mb-5">Flex Utilities</h1>
+
+      <!-- Flex Behavior -->
+      <div class="mb-5">
+        <h2>Flex Behavior</h2>
+        <div class="bg-white p-4 border rounded shadow-sm">
+          <h5 class="text-muted mb-3">Display Flex</h5>
+          <div class="d-flex p-3 text-bg-primary rounded mb-3">d-flex</div>
+          <h5 class="text-muted mb-3">Display Inline Flex</h5>
+          <div class="d-inline-flex p-3 text-bg-primary rounded mb-3">
+            d-inline-flex
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-5">
+        <h2>Flex Direction</h2>
+        <div class="bg-white p-4 rounded border shadow-sm">
+            <!-- Row -->
+             <h5 class="text-muted mb-3">Row (Default)</h5>
+             <div class="d-flex flex-row mb-4">
+                <div class="text-bg-info p-3 rounded me-2">Item 1</div>
+                <div class="text-bg-info p-3 rounded me-2">Item 2</div>
+                <div class="text-bg-info p-3 rounded">Item 3</div>
+             </div>
+             <!-- Row Reverse -->
+             <h5 class="text-muted mb-3">Row Reverse</h5>
+             <div class="d-flex flex-row-reverse mb-4">
+                <div class="text-bg-info p-3 rounded ms-2">Item 1</div>
+                <div class="text-bg-info p-3 rounded ms-2">Item 2</div>
+                <div class="text-bg-info p-3 rounded">Item 3</div>
+             </div>
+             <!-- Column  -->
+             <h5 class="text-muted mb-3">Column</h5>
+             <div class="d-flex flex-column mb-4">
+                <div class="text-bg-info p-3 rounded mb-2">Item 1</div>
+                <div class="text-bg-info p-3 rounded mb-2">Item 2</div>
+                <div class="text-bg-info p-3 rounded">Item 3</div>
+             </div>
+             <!-- Column Reverse  -->
+             <h5 class="text-muted mb-3">Column Reverse</h5>
+             <div class="d-flex flex-column-reverse">
+                <div class="text-bg-info p-3 rounded mt-2">Item 1</div>
+                <div class="text-bg-info p-3 rounded mt-2">Item 2</div>
+                <div class="text-bg-info p-3 rounded">Item 3</div>
+             </div>
+        </div>
+      </div>
+
+      <!-- Justify Contents -->
+       <div class="mb-5">
+        <h2>Justify Contents</h2>
+        <div class="bg-white p-4 rounded border shadow-sm">
+            <h5 class="text-muted mb-3">Start</h5>
+            <div class="d-flex justify-content-start mb-3">
+                <div class="p-3 text-bg-success rounded me-2">Item 1</div>
+                <div class="p-3 text-bg-success rounded">Item 2</div>
+            </div>
+
+            <h5 class="text-muted mb-3">Center</h5>
+            <div class="d-flex justify-content-center mb-3">
+                <div class="p-3 text-bg-danger rounded me-2">Item 1</div>
+                <div class="p-3 text-bg-danger rounded">Item 2</div>
+            </div>
+
+            <h5 class="text-muted mb-3">End</h5>
+            <div class="d-flex justify-content-end mb-3">
+                <div class="p-3 text-bg-primary rounded me-2">Item 1</div>
+                <div class="p-3 text-bg-primary rounded">Item 2</div>
+            </div>
+
+            <h5 class="text-muted mb-3">Between</h5>
+            <div class="d-flex justify-content-between mb-3">
+                <div class="p-3 text-bg-warning rounded me-2">Item 1</div>
+                <div class="p-3 text-bg-warning rounded">Item 2</div>
+            </div>
+
+            <h5 class="text-muted mb-3">Around</h5>
+            <div class="d-flex justify-content-around mb-3">
+                <div class="p-3 text-bg-info rounded me-2">Item 1</div>
+                <div class="p-3 text-bg-info rounded">Item 2</div>
+            </div>
+
+            <h5 class="text-muted mb-3">Evenly</h5>
+            <div class="d-flex justify-content-evenly mb-3">
+                <div class="p-3 text-bg-dark rounded me-2">Item 1</div>
+                <div class="p-3 text-bg-dark rounded">Item 2</div>
             </div>
         </div>
+       </div>
     </div>
     <script src="./JS/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
