@@ -3,50 +3,281 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FAQS</title>
+    <title>Naruto Universe</title>
     <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <style>
+      body {
+        background: linear-gradient(135deg, #ff9800, #ff5722);
+        min-height: 100vh;
+      }
+
+      .container {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+
+      h1 {
+        color: #fff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        font-weight: bold;
+      }
+
+      .accordion {
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .accordion-button {
+        background: linear-gradient(to right, #ffa000, #ff6f00);
+        color: white;
+        font-weight: 600;
+      }
+
+      .accordion-button:not(.collapsed) {
+        background: linear-gradient(to right, #ff6f00, #f57c00);
+        color: white;
+      }
+
+      .accordion-button:focus {
+        box-shadow: 0 0 0 0.25rem rgba(255, 111, 0, 0.25);
+      }
+
+      .list-group-item:hover {
+        background-color: #fff3e0;
+        transition: background-color 0.3s;
+      }
+
+      .card {
+        transition: transform 0.3s;
+        border: none;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      .table {
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .alert {
+        border: none;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .alert-warning {
+        background: linear-gradient(to right, #ffb74d, #ffa726);
+        color: white;
+      }
+
+      .alert-info {
+        background: linear-gradient(to right, #4fc3f7, #29b6f6);
+        color: white;
+      }
+
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #ff9800;
+        border-radius: 5px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #f57c00;
+      }
+
+      .accordion-body {
+        animation: fadeIn 0.5s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="container">
+      <h1 class="text-center mb-5">Naruto Universe</h1>
       <div class="row justify-content-center">
-        <div class="col-md-8 mt-5">
-          <div class="accordion" id="accordionFaqs">
+        <div class="col-md-8">
+          <div class="accordion shadow-sm" id="narutoAccordion">
+            <!--* Main Characters  -->
             <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-                  What is the Naruto story about?
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#mainCharacters"
+                >
+                  Main Characters
                 </button>
-              </h2> 
-              <div class="accordion-collapse collapse show" id="collapseOne" data-bs-parent="#accordionFaqs">
+              </h2>
+              <div
+                id="mainCharacters"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#narutoAccordion"
+              >
                 <div class="accordion-body">
-                    The story follows <strong> a young ninja, Naruto Uzumaki, on his journey to become the Hokage, or head ninja, of his village.</strong> The manga was first released in installments in the Japanese magazine Weekly Shonen Jump. Publishers later collected the installments and presented them in book form.
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      <h5 class="mb-1">Naruto Uzumaki</h5>
+                      <p class="mb-1">
+                        The main protagonist who aspires to become Hokage.
+                      </p>
+                      <small class="text-muted">Nine-Tails Jinchuriki</small>
+                    </li>
+                    <li class="list-group-item">
+                      <h5 class="mb-1">Sasuke Uchiha</h5>
+                      <p class="mb-1">
+                        Last survivor of the Uchiha clan seeking revenge.
+                      </p>
+                      <small class="text-muted">Sharingan User</small>
+                    </li>
+                    <li class="list-group-item">
+                      <h5 class="mb-1">Sakura Haruno</h5>
+                      <p class="mb-1">Medical-nin trained by Tsunade.</p>
+                      <small class="text-muted">Team 7 Member</small>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <!-- Two -->
+            <!--* Ninja Villages -->
             <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-                  What is special about Itachi?
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#villages"
+                >
+                  Hidden Villages
                 </button>
               </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFaqs">
+              <div
+                id="villages"
+                class="accordion-collapse collapse"
+                data-bs-parent="#narutoAccordion"
+              >
                 <div class="accordion-body">
-                  Abilities. Itachi's <strong>fire-enhanced shurikenjutsu.</strong> Even within the famed and battle-adept Uchiha clan, Itachi was a genius of such talent, never before seen in Konoha's history. Despite his young age, he became one of the strongest shinobi Konoha ever produced.
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Hidden Leaf Village</h5>
+                          <p class="card-text">Located in thr land of Fire</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Hidden Sand Village</h5>
+                          <p class="card-text">Located in thr land of Wind</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <!-- Three -->
+            <!--* Jutsu Types -->
             <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThird">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThird">
-                  What is Sasuke's personality?
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#jutsu"
+                >
+                  Jutsu Types
                 </button>
               </h2>
-              <div id="collapseThird" class="accordion-collapse collapse" data-bs-parent="#accordionFaqs">
+              <div
+                id="jutsu"
+                class="accordion-collapse collapse"
+                data-bs-parent="#narutoAccordion"
+              >
                 <div class="accordion-body">
-                  Teenage Sasuke showed multiple characteristics in his personality, but the basic remained the same. He was most of the time,
-                   <strong>calm, cold and aloof,</strong> sort of like a lone wolf.
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Type</th>
+                          <th>Description</th>
+                          <th>Famous User</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Ninjutsu</td>
+                          <td>Manipulating chakra for various effects</td>
+                          <td>Kakashi, Naruto</td>
+                        </tr>
+                        <tr>
+                          <td>Genjutsu</td>
+                          <td>Illusion techniques</td>
+                          <td>Itachi, Kurenai</td>
+                        </tr>
+                        <tr>
+                          <td>Taijutsu</td>
+                          <td>Physical combat techniques</td>
+                          <td>Rock Lee, Might Guy</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--* Tailed Beasts -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#tailedBeasts"
+                >
+                  Tailed Beasts
+                </button>
+              </h2>
+              <div
+                id="tailedBeasts"
+                class="accordion-collapse collapse"
+                data-bs-parent="#narutoAccordion"
+              >
+                <div class="accordion-body">
+                  <div class="alert alert-warning">
+                    <h5 class="alert-heading">Nine-Tails (Kurama)</h5>
+                    <p>
+                      The strongest of all tailed beasts, sealed within Naruto
+                      Uzumaki.
+                    </p>
+                  </div>
+                  <div class="alert alert-info">
+                    <h5 class="alert-heading">Eight-Tails (Gyuki)</h5>
+                    <p>Sealed within Killer B of the Hidden Cloud Village.</p>
+                  </div>
                 </div>
               </div>
             </div>
