@@ -1,12 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQS</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 mt-5">
+          <div class="accordion" id="accordionFaqs">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                  What is the Naruto story about?
+                </button>
+              </h2> 
+              <div class="accordion-collapse collapse show" id="collapseOne" data-bs-parent="#accordionFaqs">
+                <div class="accordion-body">
+                    The story follows <strong> a young ninja, Naruto Uzumaki, on his journey to become the Hokage, or head ninja, of his village.</strong> The manga was first released in installments in the Japanese magazine Weekly Shonen Jump. Publishers later collected the installments and presented them in book form.
+                </div>
+              </div>
+            </div>
+            <!-- Two -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                  What is special about Itachi?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFaqs">
+                <div class="accordion-body">
+                  Abilities. Itachi's <strong>fire-enhanced shurikenjutsu.</strong> Even within the famed and battle-adept Uchiha clan, Itachi was a genius of such talent, never before seen in Konoha's history. Despite his young age, he became one of the strongest shinobi Konoha ever produced.
+                </div>
+              </div>
+            </div>
+            <!-- Three -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThird">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThird">
+                  What is Sasuke's personality?
+                </button>
+              </h2>
+              <div id="collapseThird" class="accordion-collapse collapse" data-bs-parent="#accordionFaqs">
+                <div class="accordion-body">
+                  Teenage Sasuke showed multiple characteristics in his personality, but the basic remained the same. He was most of the time,
+                   <strong>calm, cold and aloof,</strong> sort of like a lone wolf.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./JS/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
