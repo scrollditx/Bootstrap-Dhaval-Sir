@@ -1,5 +1,5 @@
 <!--! Alert, Badges, Btn-Grps, Card -->
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -14,7 +14,6 @@
       <div class="bg-white p-3 rounded border border-black shadow-sm">
         <div class="row justify-content-center mt-3">
           <div class="col-md-6">
-            <!--! Alerts -->
             <div class="alert alert-primary">Alert 1</div>
             <div class="alert alert-secondary">Alert 2</div>
             <div class="alert alert-success">Alert 3</div>
@@ -53,6 +52,155 @@
         </div>
       </div>
     </div>
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Components</title>
+    <link rel="stylesheet" href="./CSS/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+  </head>
+  <body class="bg-light">
+    <div class="container my-5">
+      <!-- Alerts Section -->
+      <section class="mb-5">
+        <h2 class="text-center mb-4">Alert Examples</h2>
+        <div class="bg-white p-4 rounded border shadow-sm">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="alert alert-primary">
+                <strong>Primary Alert!</strong> Some important message.
+              </div>
+              <div class="alert alert-secondary">
+                <strong>Secondary Alert!</strong> Additional information.
+              </div>
+              <div class="alert alert-success">
+                <strong>Success!</strong> Operation completed successfully.
+              </div>
+              <div class="alert alert-danger">
+                <strong>Danger!</strong> Critical error occurred.
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="alert alert-warning">
+                <strong>Warning!</strong> Please proceed with caution.
+              </div>
+              <div class="alert alert-info">
+                <strong>Info!</strong> Important update available.
+              </div>
+              <div class="alert alert-light border">
+                <strong>Light!</strong> General information.
+              </div>
+              <div class="alert alert-dark">
+                <strong>Dark!</strong> System notification.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Badges Section -->
+      <section class="mb-5">
+        <h2 class="text-center mb-4">Badge Examples</h2>
+        <div class="bg-white p-4 rounded border shadow-sm">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <h3 class="mb-4">Heading Badges</h3>
+              <h1>Heading <span class="badge bg-primary">New</span></h1>
+              <h2>Heading <span class="badge bg-secondary">Update</span></h2>
+              <h3>Heading <span class="badge bg-success">Complete</span></h3>
+              <h4>Heading <span class="badge bg-danger">Alert</span></h4>
+              <h5>
+                Heading <span class="badge bg-warning text-dark">Warning</span>
+              </h5>
+              <h6>Heading <span class="badge bg-info text-dark">Info</span></h6>
+            </div>
+            <div class="col-md-6">
+              <h3 class="mb-4">Breadcrumb Navigation</h3>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="#" class="text-decoration-none">Home</a>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a href="#" class="text-decoration-none">Library</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Current Page
+                  </li>
+                </ol>
+              </nav>
+
+              <h3 class="mt-4 mb-3">Pill Badges</h3>
+              <span class="badge rounded-pill bg-primary me-2">Primary</span>
+              <span class="badge rounded-pill bg-secondary me-2"
+                >Secondary</span
+              >
+              <span class="badge rounded-pill bg-success me-2">Success</span>
+              <span class="badge rounded-pill bg-danger">Danger</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Button Groups Section -->
+      <section class="mb-5">
+        <h2 class="text-center mb-4">Button Group Examples</h2>
+        <div class="bg-white p-4 rounded border shadow-sm">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="btn-group w-100">
+                <button type="button" class="btn btn-primary">Left</button>
+                <button type="button" class="btn btn-primary">Middle</button>
+                <button type="button" class="btn btn-primary">Right</button>
+              </div>
+            </div>
+            <!-- Vertical Button Group -->
+            <div class="col-md-6">
+              <div class="btn-group-vertical w-100 mb-3">
+                <button type="button" class="btn btn-success">Button 1</button>
+                <button type="button" class="btn btn-success">Button 2</button>
+                <button type="button" class="btn btn-success">Button 3</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mt-4">
+          <!-- Mixed Styles Button Group -->
+          <div class="btn-group w-100 mb-3">
+            <button type="button" class="btn btn-danger">Delete</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-info">Info</button>
+          </div>
+
+          <!-- Outlined Button Group -->
+          <div class="btn-group w-100 mb-3">
+            <button type="button" class="btn btn-outline-primary">Left</button>
+            <button type="button" class="btn btn-outline-primary">
+              Center
+            </button>
+            <button type="button" class="btn btn-outline-primary">Right</button>
+          </div>
+
+          <!-- Checkbox Button Group -->
+          <div class="btn-group w-100">
+            <input type="checkbox" class="btn-check" id="btn-check1" />
+            <label class="btn btn-secondary" for="btn-check1">Option 1</label>
+
+            <input type="checkbox" class="btn-check" id="btn-check2" />
+            <label class="btn btn-secondary" for="btn-check2">Option 2</label>
+
+            <input type="checkbox" class="btn-check" id="btn-check3" />
+            <label class="btn btn-secondary" for="btn-check3">Option 3</label>
+          </div>
+        </div>
+      </section>
+    </div>
+
     <script src="./JS/bootstrap.bundle.min.js"></script>
   </body>
 </html>
