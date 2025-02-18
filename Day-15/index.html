@@ -1,21 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./CSS/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./CSS/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+  </head>
+  <body class="bg-light">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12">
-                <!--! Alerts -->
-                
-            </div>
+      <h2 class="text-center my-3">Alerts</h2>
+      <div class="bg-white p-3 rounded border border-black shadow-sm">
+        <div class="row justify-content-center mt-3">
+          <div class="col-md-6">
+            <!--! Alerts -->
+            <div class="alert alert-primary">Alert 1</div>
+            <div class="alert alert-secondary">Alert 2</div>
+            <div class="alert alert-success">Alert 3</div>
+            <div class="alert alert-danger">Alert 4</div>
+          </div>
+          <div class="col-md-6">
+            <div class="alert alert-warning">Alert 5</div>
+            <div class="alert alert-info">Alert 6</div>
+            <div class="alert alert-light">Alert 7</div>
+            <div class="alert alert-dark">Alert 8</div>
+          </div>
         </div>
+      </div>
+      <h2 class="text-center my-3">Badges</h2>
+      <div class="badges bg-white rounded border border-black shadow-sm p-3">
+        <div class="row justify-content-center align-content-center">
+          <div class="col-md-6">
+            <h1>Hello<span class="badge text-bg-primary">World!!</span></h1>
+            <h2>Hello <span class="badge text-bg-secondary">World!!</span></h2>
+            <h3>Hello <span class="badge text-bg-info">World!!</span></h3>
+            <h4>Hello <span class="badge text-bg-danger">World!!</span></h4>
+            <h5>Hello <span class="badge text-bg-warning">World!!</span></h5>
+            <h6>Hello <span class="badge text-bg-dark">World!!</span></h6>
+          </div>
+          <div class="col-md-6">
+            <nav style="--bs-breadcrumb-divider: '▶';">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Home</a></li>
+                  <li class="breadcrumb-item active">Library</li>
+                  <li class="breadcrumb-item">About Us</li>
+                  <li class="breadcrumb-item">Contact Us</li>
+                  <li class="breadcrumb-item">Blog</li>
+                </ol>
+              </nav>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="./JS/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
