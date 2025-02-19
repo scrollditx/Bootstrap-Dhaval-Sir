@@ -1,14 +1,530 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cards</title>
-    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+  </head>
+  <body class="bg-light">
+    <!--! Cards -->
+    <div class="container my-5">
+      <!--* Basic Cards -->
+      <section class="mb-5">
+        <h2 class="text-center mb-4">Basic Cards</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="https://picsum.photos/300/200"
+                class="card-img-top"
+                alt="Card image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card Title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Card Title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">
+                  Some quick example text to build on the card title.
+                </p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm text-center">
+              <div class="card-header">Featured</div>
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+              <div class="card-footer text-muted">2 days ago</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--* Cards with List Groups -->
+      <section class="mb-5">
+        <h2 class="text-center mb-4">Cards with List Groups</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card shadow-sm">
+              <div class="card-header bg-primary text-white">
+                Featured Lists
+              </div>
+              <ul class="list-group list-group-flush">
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  Item 1
+                  <span class="badge bg-primary rounded-pill">14</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  Item 2
+                  <span class="badge bg-primary rounded-pill">2</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                >
+                  Item 3
+                  <span class="badge bg-primary rounded-pill">1</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card shadow-sm">
+              <div
+                class="card-header bg-success text-white d-flex justify-content-between align-items-center"
+              >
+                Task List
+                <span class="badge bg-light text-success">4 Tasks</span>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div
+                    class="form-check d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="task1"
+                      />
+                      <label class="form-check-label" for="task1"
+                        >Complete project documentation</label
+                      >
+                    </div>
+                    <span class="badge bg-danger">High</span>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div
+                    class="form-check d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="task2"
+                        checked
+                      />
+                      <label
+                        class="form-check-label text-decoration-line-through"
+                        for="task2"
+                        >Review code changes</label
+                      >
+                    </div>
+                    <span class="badge bg-warning text-dark">Medium</span>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div
+                    class="form-check d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="task3"
+                      />
+                      <label class="form-check-label" for="task3"
+                        >Update dependencies</label
+                      >
+                    </div>
+                    <span class="badge bg-info">Low</span>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div
+                    class="form-check d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="task4"
+                      />
+                      <label class="form-check-label" for="task4"
+                        >Deploy to production</label
+                      >
+                    </div>
+                    <span class="badge bg-success">Ready</span>
+                  </div>
+                </li>
+              </ul>
+              <div class="card-footer bg-light">
+                <small class="text-muted">Last updated 2 hours ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--* Quote Cards Section -->
+      <section class="mb-5">
+        <h2 class="text-center mb-4">Quote Cards</h2>
+        <div class="row g-4">
+          <!-- Simple Quote Card -->
+          <div class="col-md-6">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <blockquote class="blockquote">
+                  <p>"The only way to do great work is to love what you do."</p>
+                  <footer class="blockquote-footer">
+                    Steve Jobs <cite title="Source">Apple Inc.</cite>
+                  </footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+
+          <!-- Styled Quote Card -->
+          <div class="col-md-6">
+            <div class="card bg-primary text-white shadow-sm">
+              <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <p>
+                    "Innovation distinguishes between a leader and a follower."
+                  </p>
+                  <footer class="blockquote-footer text-white-50">
+                    Steve Jobs <cite title="Source">Innovation Speech</cite>
+                  </footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quote Card with Image -->
+          <div class="col-md-6">
+            <div class="card shadow-sm">
+              <div class="card-header bg-light">
+                <img
+                  src="https://picsum.photos/50"
+                  class="rounded-circle me-2"
+                  alt="Author"
+                />
+                Featured Quote
+              </div>
+              <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <p>
+                    "Life is 10% what happens to you and 90% how you react to
+                    it."
+                  </p>
+                  <footer class="blockquote-footer">
+                    Charles R. Swindoll
+                    <cite title="Source">Life Principles</cite>
+                  </footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quote Card with Border -->
+          <div class="col-md-6">
+            <div class="card border-primary shadow-sm">
+              <div
+                class="card-header border-primary bg-transparent text-primary"
+              >
+                Inspirational Quote
+              </div>
+              <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <p>
+                    "The future belongs to those who believe in the beauty of
+                    their dreams."
+                  </p>
+                  <footer class="blockquote-footer">
+                    Eleanor Roosevelt
+                    <cite title="Source">Personal Memoirs</cite>
+                  </footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--* Horizontal Cards -->
+      <section class="mb-5">
+        <h2 class="text-center mb-4">Horizontal Cards</h2>
+        <div class="row g-4">
+          <div class="col-12">
+            <div class="card shadow-sm">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="https://picsum.photos/400/300"
+                    class="img-fluid rounded-start h-100"
+                    alt="Card image"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content.
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--* Cards with Navigation -->
+      <section class="mb-5">
+        <h2 class="text-center mb-4">Cards with Navigation</h2>
+        <div class="card text-center shadow-sm">
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Active</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">
+              With supporting text below as a natural lead-in to additional
+              content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </section>
+
+      <!--* Cards with Different Colors -->
+      <section class="mb-5">
+        <h2 class="text-center mb-4">Colorful Cards</h2>
+        <div class="row g-4">
+          <!-- Primary Background Card -->
+          <div class="col-md-4">
+            <div class="card text-white bg-primary shadow-sm h-100">
+              <div class="card-header border-light">Primary Card</div>
+              <div class="card-body">
+                <h5 class="card-title">Primary Background</h5>
+                <p class="card-text">
+                  Some quick example text for the primary card.
+                </p>
+                <button class="btn btn-outline-light">Learn More</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Success Background Card -->
+          <div class="col-md-4">
+            <div class="card text-white bg-success shadow-sm h-100">
+              <div class="card-header border-light">Success Card</div>
+              <div class="card-body">
+                <h5 class="card-title">Success Background</h5>
+                <p class="card-text">
+                  Some quick example text for the success card.
+                </p>
+                <button class="btn btn-outline-light">Learn More</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Info Background Card -->
+          <div class="col-md-4">
+            <div class="card text-white bg-info shadow-sm h-100">
+              <div class="card-header border-light">Info Card</div>
+              <div class="card-body">
+                <h5 class="card-title">Info Background</h5>
+                <p class="card-text">
+                  Some quick example text for the info card.
+                </p>
+                <button class="btn btn-outline-light">Learn More</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Warning Background Card -->
+          <div class="col-md-4">
+            <div class="card bg-warning shadow-sm h-100">
+              <div class="card-header border-dark">Warning Card</div>
+              <div class="card-body">
+                <h5 class="card-title">Warning Background</h5>
+                <p class="card-text">
+                  Some quick example text for the warning card.
+                </p>
+                <button class="btn btn-outline-dark">Learn More</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Danger Background Card -->
+          <div class="col-md-4">
+            <div class="card text-white bg-danger shadow-sm h-100">
+              <div class="card-header border-light">Danger Card</div>
+              <div class="card-body">
+                <h5 class="card-title">Danger Background</h5>
+                <p class="card-text">
+                  Some quick example text for the danger card.
+                </p>
+                <button class="btn btn-outline-light">Learn More</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Secondary Background Card -->
+          <div class="col-md-4">
+            <div class="card text-white bg-secondary shadow-sm h-100">
+              <div class="card-header border-light">Secondary Card</div>
+              <div class="card-body">
+                <h5 class="card-title">Secondary Background</h5>
+                <p class="card-text">
+                  Some quick example text for the secondary card.
+                </p>
+                <button class="btn btn-outline-light">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--* Image Position and Overlay Cards -->
+      <section class="mb-5">
+        <h2 class="text-center mb-4">Image Cards & Overlays</h2>
+        <div class="row g-4">
+          <!-- Card with Top Image -->
+          <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+              <img
+                src="https://picsum.photos/300/200"
+                class="card-img-top"
+                alt="Top Image"
+              />
+              <div class="card-body text-start">
+                <h5 class="card-title">Top Image Card</h5>
+                <p class="card-text">
+                  This card has an image at the top with left-aligned text.
+                </p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card with Bottom Image -->
+          <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+              <div class="card-body text-center">
+                <h5 class="card-title">Bottom Image Card</h5>
+                <p class="card-text">
+                  This card has an image at the bottom with center-aligned text.
+                </p>
+                <a href="#" class="btn btn-success">Explore</a>
+              </div>
+              <img
+                src="https://picsum.photos/300/200"
+                class="card-img-bottom"
+                alt="Bottom Image"
+              />
+            </div>
+          </div>
+
+          <!-- Card with Image Overlay -->
+          <div class="col-md-4">
+            <div class="card text-white shadow-sm h-100">
+              <img
+                src="https://picsum.photos/300/400"
+                class="card-img h-100"
+                alt="Background Image"
+              />
+              <div
+                class="card-img-overlay"
+                style="background: rgba(0, 0, 0, 0.5)"
+              >
+                <h5 class="card-title text-end">Image Overlay Card</h5>
+                <p class="card-text text-end">
+                  This card has text overlaid on the image with right alignment.
+                </p>
+                <p class="card-text text-end">
+                  <small>Last updated 3 mins ago</small>
+                </p>
+                <a href="#" class="btn btn-outline-light float-end">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Full Image Overlay with Gradient -->
+          <div class="col-md-6">
+            <div class="card text-white shadow-sm">
+              <img
+                src="https://picsum.photos/600/300"
+                class="card-img"
+                alt="Gradient Overlay"
+              />
+              <div
+                class="card-img-overlay"
+                style="
+                  background: linear-gradient(
+                    45deg,
+                    rgba(0, 0, 0, 0.8),
+                    transparent
+                  );
+                "
+              >
+                <h5 class="card-title">Gradient Overlay</h5>
+                <p class="card-text">
+                  This card uses a gradient overlay for better text visibility.
+                </p>
+                <button class="btn btn-light">Read More</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card with Centered Overlay Content -->
+          <div class="col-md-6">
+            <div class="card text-white shadow-sm">
+              <img
+                src="https://picsum.photos/600/300"
+                class="card-img"
+                alt="Centered Content"
+              />
+              <div
+                class="card-img-overlay d-flex flex-column justify-content-center align-items-center text-center"
+                style="background: rgba(0, 0, 0, 0.6)"
+              >
+                <h5 class="card-title">Centered Content</h5>
+                <p class="card-text">
+                  This card has perfectly centered content over the image.
+                </p>
+                <button class="btn btn-outline-light">Discover</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
     <script src="./JS/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
