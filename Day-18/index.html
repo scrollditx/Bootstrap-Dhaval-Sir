@@ -1,13 +1,234 @@
+<!--! Dropdowns -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dropdowns</title>
-    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container d-flex flex-column align-items-center py-5">
+      <div class="row g-4">
+        <div
+          class="col-md-6 d-flex flex-column align-items-center text-bg-danger"
+        >
+          <!-- Basic Dropdown -->
+          <h3 class="mb-3">Basic Dropdown</h3>
+          <div class="dropdown mb-5">
+            <button
+              class="btn btn-primary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+            >
+              Basic Dropdown
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#" class="dropdown-item">Action</a></li>
+              <li><a href="#" class="dropdown-item">Another action</a></li>
+              <li><a href="#" class="dropdown-item">Something else</a></li>
+            </ul>
+          </div>
+          <!-- Split Button Dropdown -->
+          <h3 class="mb-3">Split Button Dropdown</h3>
+          <div class="btn-group mb-5">
+            <button type="button" class="btn btn-success">
+              Split Dropdown
+            </button>
+            <button
+              type="button"
+              class="btn btn-success dropdown-toggle dropdown-toggle-split"
+              data-bs-toggle="dropdown"
+            ></button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </div>
+          <!-- Dropdown with Header  -->
+          <h3 class="mb-3">Dropdown with Header</h3>
+          <div class="dropdown mb-5">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+            >
+              Dropdown with Header
+            </button>
+            <ul class="dropdown-menu">
+              <li><h6 class="dropdown-header">Dropdown header</h6></li>
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="col-md-6 d-flex flex-column align-items-center text-bg-warning"
+        >
+          <!-- Dark Theme Dropdown -->
+          <h3 class="mb-3">Dark Theme Dropdown</h3>
+          <div class="dropdown mb-5">
+            <button
+              class="btn btn-dark dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+            >
+              Dark Dropdown
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item active" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+          <!-- DropUp  -->
+          <h3 class="mb-3">DropUp</h3>
+          <div class="dropup mb-5">
+            <button
+              class="btn btn-info dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+            >
+              Dropup
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#">Action</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Another action</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Dropdown with Form  -->
+          <h3 class="mb-3">Dropdown with Form</h3>
+          <div class="dropdown mb-5">
+            <button
+              class="btn btn-primary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+            >
+              Dropdown Form
+            </button>
+            <div class="dropdown-menu p-4" style="width: 300px">
+              <form>
+                <div class="mb-3">
+                  <label class="form-label">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="email@example.com"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Password"
+                  />
+                </div>
+                <button type="submit" class="btn btn-warning">Sign in</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-12 d-flex flex-column align-items-center text-bg-success"
+        >
+          <!-- Dropdown Menu with Icons -->
+          <h3 class="mb-3">Dropdown with Icons</h3>
+          <div class="dropdown mb-5">
+            <button
+              class="btn btn-primary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+            >
+              Menu with Icons
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="fa-solid fa-house"></i> Home
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="fa-solid fa-gear"></i> Settings
+                </a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="fa-solid fa-arrow-right"></i> Logout
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Dropstart (Left-aligned dropdown) -->
+          <h3 class="mb-3">Dropstart</h3>
+          <div class="dropstart mb-5">
+            <button
+              class="btn btn-danger dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+            >
+              Dropstart
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+
+          <!-- Dropdown with Checkbox/Radio -->
+          <h3 class="mb-3">Dropdown with Checkboxes</h3>
+          <div class="dropdown mb-5">
+            <button
+              class="btn btn-info dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+            >
+              Select Options
+            </button>
+            <ul class="dropdown-menu p-3">
+              <li>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="check1" />
+                  <label class="form-check-label" for="check1">Option 1</label>
+                </div>
+              </li>
+              <li>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="check2" />
+                  <label class="form-check-label" for="check2">Option 2</label>
+                </div>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="radio"
+                    id="radio1"
+                  />
+                  <label class="form-check-label" for="radio1">Radio 1</label>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./JS/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
