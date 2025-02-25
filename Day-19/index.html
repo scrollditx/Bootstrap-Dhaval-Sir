@@ -1,3 +1,4 @@
+<!--! Modals  -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,113 +6,475 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
-    <div class="container py-2">
-      <h1 class="text-center mb-5">Bootstrap Modal Examples</h1>
-      <!-- 1. Basic Modal -->
-      <div class="mb-4">
-        <button
-          type="button"
-          class="btn btn-primary"
-          data-bs-toggle="modal"
-          data-bs-target="#basicModal"
-        >
-          Basic Modal
-        </button>
-        <div class="modal fade" id="basicModal">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title">Basic Modal</h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                ></button>
-              </div>
-              <div class="modal-body">
-                <p>This is a basic modal example</p>
-              </div>
-              <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-secondary"
-                  data-bs-dismiss="modal"
-                >
-                  Close
-                </button>
-                <button type="button" class="btn btn-primary">
-                  Save changes
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- 2. Static Backdrop Modal -->
-      <div class="mb-4">
-        <button
-          type="button"
-          class="btn btn-primary"
-          data-bs-toggle="modal"
-          data-bs-target="#staticModal"
-        >
-          Static Backdrop Modal
-        </button>
-        <div class="modal fade" id="staticModal" data-bs-backdrop="static">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title">Static Backdrop Modal</h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                ></button>
-              </div>
-              <div class="modal-body">
-                <p>Can't close by clicking outside</p>
-              </div>
-              <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-secondary"
-                  data-bs-dismiss="modal"
-                >
-                  Close
-                </button>
-                <button type="button" class="btn btn-primary">
-                  Save changes
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- 3. Scrollable Modal -->
-      <div class="mb-4">
-        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#scrollModal">
-            Scrollable Modal
-        </button>
-        <div class="modal fade" id="scrollModal">
-            <div class="modal-dialog modal-dialog-scrollable">
+    <div class="container py-1">
+      <h1 class="text-center mb-3">Bootstrap Modal Examples</h1>
+      <div class="row g-4">
+        <!-- Column 1 -->
+        <div class="col-md-4">
+          <!-- 1. Basic Modal -->
+          <div class="mb-4 d-flex justify-content-center">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-toggle="modal"
+              data-bs-target="#basicModal"
+            >
+              Basic Modal
+            </button>
+            <div class="modal fade" id="basicModal">
+              <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Scrollable Modal</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>Content repeated multiple times...</p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
+                  <div class="modal-header">
+                    <h5 class="modal-title">Basic Modal</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>This is a basic modal example</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Save changes
+                    </button>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
+          <!-- 2. Static Backdrop Modal -->
+          <div class="mb-4 d-flex justify-content-center">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-toggle="modal"
+              data-bs-target="#staticModal"
+            >
+              Static Backdrop Modal
+            </button>
+            <div class="modal fade" id="staticModal" data-bs-backdrop="static">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Static Backdrop Modal</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Can't close by clicking outside</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Save changes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 3. Scrollable Modal -->
+          <div class="mb-4 d-flex justify-content-center">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-toggle="modal"
+              data-bs-target="#scrollModal"
+            >
+              Scrollable Modal
+            </button>
+            <div class="modal fade" id="scrollModal">
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Scrollable Modal</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged. It was popularised in the
+                      1960s with the release of Letraset sheets containing Lorem
+                      Ipsum passages, and more recently with desktop publishing
+                      software like Aldus PageMaker including versions of Lorem
+                      Ipsum.Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged. It was popularised in the
+                      1960s with the release of Letraset sheets containing Lorem
+                      Ipsum passages, and more recently with desktop publishing
+                      software like Aldus PageMaker including versions of Lorem
+                      Ipsum.Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged. It was popularised in the
+                      1960s with the release of Letraset sheets containing Lorem
+                      Ipsum passages, and more recently with desktop publishing
+                      software like Aldus PageMaker including versions of Lorem
+                      Ipsum.Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged. It was popularised in the
+                      1960s with the release of Letraset sheets containing Lorem
+                      Ipsum passages, and more recently with desktop publishing
+                      software like Aldus PageMaker including versions of Lorem
+                      Ipsum.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
+        <!-- Column 2 -->
+        <div class="col-md-4">
+          <!-- 4. Vertically Centered Modal -->
+          <div class="mb-4 d-flex justify-content-center">
+            <button
+              type="button"
+              class="btn btn-warning"
+              data-bs-toggle="modal"
+              data-bs-target="#centeredModal"
+            >
+              Vertically Centered Modal
+            </button>
+            <div class="modal fade" id="centeredModal">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Vertically Centered Modal</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>This modal is vertically centered</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 5. Extra Large Modal -->
+          <div class="mb-4 d-flex justify-content-center">
+            <button
+              type="button"
+              class="btn btn-warning"
+              data-bs-toggle="modal"
+              data-bs-target="#xlModal"
+            >
+              Extra Large Modal
+            </button>
+            <div class="modal fade" id="xlModal">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Extra Large Modal</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>This is an extra large modal</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 6. Grid Layout Modal -->
+          <div class="mb-4 d-flex justify-content-center">
+            <button
+              type="button"
+              class="btn btn-warning"
+              data-bs-toggle="modal"
+              data-bs-target="#gridModal"
+            >
+              Grid Layout Modal
+            </button>
+            <div class="modal fade" id="gridModal">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Grid Layout Modal</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <!-- Grid Layout Modal -->
+                    <div class="container-fluid">
+                      <!-- Row 1 -->
+                      <div class="row mb-3">
+                        <div class="col-md-4">
+                          <div class="p-3 border text-bg-dark">Column 1</div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="p-3 border text-bg-dark">Column 2</div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="p-3 border text-bg-dark">Column 3</div>
+                        </div>
+                      </div>
+                      <!-- Row 2 -->
+                      <div class="row mb-3">
+                        <div class="col-md-6">
+                          <div class="p-3 border text-bg-primary">
+                            Half Width
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="p-3 border text-bg-danger">
+                            Half Width
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Row 3 -->
+                      <div class="row">
+                        <div class="col-md-8">
+                          <div class="p-3 text-bg-warning">
+                            <h6>Nested Grid</h6>
+                            <div class="row">
+                              <div class="col-6">
+                                <div class="p-2 border text-bg-light">
+                                  Nested 1
+                                </div>
+                              </div>
+                              <div class="col-6">
+                                <div class="p-2 border text-bg-light">
+                                  Nested 2
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="p-4 border text-bg-primary">Sidebar</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Column 3 -->
+        <div class="col-md-4">
+          <!-- 7. Fullscreen Modal  -->
+          <div class="mb-4 d-flex justify-content-center">
+            <button
+              type="button"
+              class="btn btn-success"
+              data-bs-toggle="modal"
+              data-bs-target="#fullscreenModal"
+            >
+              Fullscreen Modal
+            </button>
+            <div class="modal fade" id="fullscreenModal">
+              <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Fullscreen Modal</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>This modal takes up the entire screen</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 8. Modal with Form -->
+          <div class="mb-4 d-flex justify-content-center">
+            <button
+              type="button"
+              class="btn btn-success"
+              data-bs-toggle="modal"
+              data-bs-target="#formModal"
+            >
+              Modal with Form
+            </button>
+            <div class="modal fade" id="formModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Login Form</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="email" class="form-label"
+                          >Email address</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          required
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="password" class="form-label"
+                          >Password</label
+                        >
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="password"
+                          required
+                        />
+                      </div>
+                      <div class="mb-3 form-check">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="remember"
+                          required
+                        />
+                        <label for="remember" class="form-check-label"
+                          >Remember Me</label
+                        >
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">Login</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 9. Animated Modal  -->
+          <div class="d-flex justify-content-center">
+            <button
+              type="button"
+              class="btn btn-success"
+              data-bs-toggle="modal"
+              data-bs-target="#animatedModal"
+            >
+              Animated Modal
+            </button>
+            <div
+              class="modal fade"
+              id="animatedModal"
+              data-bs-backdrop="static"
+            >
+              <div class="modal-dialog modal-dialog-centered modal-sm">
+                <div class="modal-content animate__animated animate__bounceIn">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Animated Modal</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                    ></button>
+                  </div>
+                  <div class="modal-body text-center">
+                    <i
+                      class="bi bi-check-circle-fill text-success fs-3 mb-3"
+                    ></i>
+                    <p>This modal has animation!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="./JS/bootstrap.bundle.min.js"></script>
   </body>
