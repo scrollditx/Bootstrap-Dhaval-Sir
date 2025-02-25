@@ -1,4 +1,4 @@
-<!--! Modals  -->
+<!--! Modals & Offcanvas -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,8 +16,9 @@
     />
   </head>
   <body>
+    <!-- Modals -->
     <div class="container py-1">
-      <h1 class="text-center mb-3">Bootstrap Modal Examples</h1>
+      <h2 class="text-center mb-4">Bootstrap Modal Examples</h2>
       <div class="row g-4">
         <!-- Column 1 -->
         <div class="col-md-4">
@@ -471,6 +472,168 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Offcanvas  -->
+    <div class="container py-2">
+      <h2 class="text-center mb-5">Bootstrap Offcanvas</h2>
+      <div class="row g-4">
+        <!-- Column 1 -->
+        <div class="col-md-4 d-flex flex-column align-items-center">
+          <button
+            class="btn btn-primary mb-4"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#basicOffcanvas"
+          >
+            Basic Offcanvas
+          </button>
+          <div class="offcanvas offcanvas-start" id="basicOffcanvas">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title">Basic Offcanvas</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <p>
+                This is a basic offcanvas example that slides from the left.
+              </p>
+            </div>
+          </div>
+          <!-- Right Side -->
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#rightOffcanvas"
+          >
+            Right Offcanvas
+          </button>
+          <div class="offcanvas offcanvas-end" id="rightOffcanvas">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title">Right Offcanvas</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <p>This is a right side offcanvas example.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Column 2 -->
+        <div class="col-md-4 d-flex flex-column align-items-center">
+          <!-- Top Offcanvas -->
+          <button
+            type="button"
+            class="btn btn-dark mb-4"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#topOffcanvas"
+          >
+            Top Canvas
+          </button>
+          <div class="offcanvas offcanvas-top" id="topOffcanvas">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title">Top Offcanvas</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <p>This is a top offcanvas example.</p>
+            </div>
+          </div>
+          <!-- Bottom Offcanvas -->
+          <button
+            type="button"
+            class="btn btn-dark"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#bottomOffcanvas"
+          >
+            Bottom Offcanvas
+          </button>
+          <div class="offcanvas offcanvas-bottom" id="bottomOffcanvas">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title">Bottom Offcanvas</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <p>This is a bottom offcanvas example.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Column 3 -->
+        <div class="col-md-4 d-flex flex-column align-items-center">
+          <!-- Offcanvas with Form -->
+          <button
+            type="button"
+            class="btn btn-info mb-4"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#formOffcanvas"
+          >
+            Offcanvas with Form
+          </button>
+          <div class="offcanvas offcanvas-start" id="formOffcanvas">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title">Contact Form</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" required />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+          <!-- Backdrop Static Offcanvas -->
+          <button type="button" class="btn btn-info" data-bs-toggle="offcanvas" data-bs-target="#staticOffcanvas">Static Offcanvas</button>
+          <div class="offcanvas offcanvas-start" id="staticOffcanvas" data-bs-backdrop="static">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title">
+                Static Backdrop Offcanvas
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+              <p>This offcanvas has a static backdrop</p>
             </div>
           </div>
         </div>
