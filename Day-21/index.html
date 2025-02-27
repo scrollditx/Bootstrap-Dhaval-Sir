@@ -1,13 +1,204 @@
+<!--! Nav-tabs & Pagination -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nav-tabs</title>
-    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <style>
+      .section {
+        padding: 2rem 0;
+        border-bottom: 1px solid #dee2e6;
+      }
+      .nav-title {
+        color: #0d6efd;
+        margin-bottom: 1.5rem;
+        padding-left: 1rem;
+        border-left: 4px solid #0d6efd;
+      }
+      .example-block {
+        margin-bottom: 2rem;
+        padding: 1.5rem;
+        border: 1px solid #dee2e6;
+        border-radius: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Nav Tabs -->
+    <section class="section">
+      <div class="container">
+        <h2 class="nav-title">Navigation Tabs Examples</h2>
+        <!-- 1. Basic Nav-tabs -->
+        <div class="example-block">
+          <h4 class="mb-3">1. Basic Nav-Tabs</h4>
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+        </div>
+        <!-- 2. Pills Navigation  -->
+        <div class="example-block">
+          <h4 class="mb-3">2. Pills Navigation</h4>
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profiles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Messages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">About Us</a>
+            </li>
+          </ul>
+        </div>
+        <!-- 3. Fill and Justify -->
+        <div class="example-block">
+          <h4 class="mb-3">3. Fill and Justify tabs</h4>
+          <ul class="nav nav-pills nav-fill">
+            <li class="nav-item">
+              <a class="nav-link active" href="">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Profiles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Messages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="">About Us</a>
+            </li>
+          </ul>
+        </div>
+        <!-- 4. Vertical Pills  -->
+        <div class="example-block">
+          <h4 class="mb-3">4. Vertical Pills</h4>
+          <div class="d-flex">
+            <div class="nav flex-column nav-pills me-3" role="tablist">
+              <button
+                class="nav-link"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-home"
+              >
+                Home
+              </button>
+              <button
+                class="nav-link"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-profile"
+              >
+                Profile
+              </button>
+              <button
+                class="nav-link"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-messages"
+              >
+                Messages
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Pagination -->
+    <section class="section">
+      <div class="container">
+        <h2 class="nav-title">Pagination</h2>
+        <!-- 1. Basic Pagination -->
+        <div class="example-block">
+          <h4 class="mb-3">1. Basic Pagination</h4>
+          <nav>
+            <ul class="pagination">
+              <li class="page-item disabled">
+                <a class="page-link">Previous</a>
+              </li>
+              <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- 2. Pagination with Icons -->
+        <div class="example-block">
+          <h4 class="mb-3">2. Pagination with Icons</h4>
+          <nav>
+            <ul class="pagination">
+              <li class="page-item">
+                <a href="" class="page-link">
+                  <span>&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item active"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">
+                  <span>&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- 3. Sized Pagination -->
+        <div class="example-block">
+          <h4 class="mb-3">3. Sized Pagination</h4>
+          <nav>
+            <ul class="pagination pagination-lg">
+              <li class="page-item disabled">
+                <a class="page-link">Previous</a>
+              </li>
+              <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- 4. Centered Pagination -->
+        <div class="example-block">
+            <h4 class="mb-3">4. Centered Pagination</h4>
+            <nav>
+              <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                  <a class="page-link">Previous</a>
+                </li>
+                <li class="page-item active">
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+      </div>
+    </section>
     <script src="./JS/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
